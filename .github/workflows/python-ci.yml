@@ -2,9 +2,9 @@ name: Python CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "developer", "staging" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "developer", "staging" ]
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
 
     - name: Ejecutar pruebas
       run: |
-        python -m pytest
+        python -m pytest -v
