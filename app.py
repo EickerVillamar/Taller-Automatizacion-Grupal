@@ -1,5 +1,5 @@
 import sys
-from src.agenda import agenda  # o Agenda, dependiendo de tu código
+from src.agenda import agenda
 from src.busqueda_contacto import buscar_contacto
 
 def iniciar_aplicacion():
@@ -37,5 +37,5 @@ def iniciar_aplicacion():
         else:
             print("Opción no válida. Intente de nuevo.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     iniciar_aplicacion()

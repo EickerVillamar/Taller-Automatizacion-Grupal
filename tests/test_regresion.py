@@ -12,7 +12,7 @@ class TestRegresionAgenda(unittest.TestCase):
         Verifica que las reglas fundamentales del negocio (solo texto, 10 dígitos)
         sigan funcionando tras las recientes integraciones del sistema.
         """
-        # 1. Verificamos que la restricción de "solo texto" no se haya roto
+        # 1. Verificamos que la restricción de "solo texto" no se haya ro
         with self.assertRaises(ValueError) as context1:
             self.mi_agenda.registrar_contacto("Carlos123", "0991234567")
         self.assertTrue("únicamente texto" in str(context1.exception))
